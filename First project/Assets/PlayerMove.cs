@@ -18,9 +18,11 @@ public class PlayerMove : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {        
         float x = joystick.Horizontal;
         float z = joystick.Vertical;
+        x += Input.GetAxis("Horizontal");
+        z += Input.GetAxis("Vertical");
         Vector3 direction = new Vector3(x, 0f, z).normalized;
 
         if (direction.magnitude >= 0.1f)
@@ -37,6 +39,7 @@ public class PlayerMove : MonoBehaviour
         {
             animator.SetBool("isRunning", false);
         }
+
 
     }
 
