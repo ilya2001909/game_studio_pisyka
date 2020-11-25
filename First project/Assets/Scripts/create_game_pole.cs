@@ -1,0 +1,54 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class create_game_pole : MonoBehaviour
+{
+
+    public int kol_room_x, kol_room_z;
+    public GameObject[,] panels; 
+
+    public GameObject pole_zon;
+    public float x_change = 70;
+    public float z_change = 34.5f;
+    public float x_start_pos;
+    public float y_start_pos;
+    public float z_start_pos;
+   
+    void Start()
+    {
+
+        panels = new GameObject[kol_room_x, kol_room_z];
+        float x = x_start_pos;
+        float y = y_start_pos;
+        float z = z_start_pos;
+
+        for (int i1 = 0; i1 < kol_room_z; i1++)
+        {
+            for (int i2 = 0; i2 < kol_room_x; i2++)
+            {
+                Vector3 pos = new Vector3(x, y, z);
+
+                Quaternion qua = transform.rotation;
+
+                panels[i1, i2] = Instantiate(pole_zon, pos, qua);
+
+                panels[i1, i2].name = pole_zon.name + " - (" + (i2).ToString() + ";" + (i1).ToString() + ")";
+
+                ParticleSystem[] ps = panels[i1, i2].GetComponentsInChildren<ParticleSystem>();
+                foreach (ParticleSystem p in ps)
+                {
+                    p.gameObject.SetActive(false);
+                }
+                panels[i1, i2].GetComponent<Check_active>().particles = ps;
+
+                x = x + x_change;
+            }
+            x = x_start_pos;
+            z = z + z_change;
+        }
+
+    }
+
+
+}
