@@ -70,6 +70,7 @@
      <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\TransformExtension.cs" />
      <Compile Include="Assets\Scripts\Check_active.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\HealtsSistem.cs" />
      <Compile Include="Assets\Scripts\Scr_for_player\Attack_player.cs" />
      <Compile Include="Assets\Scripts\Scr_for_player\PlayerMove.cs" />
      <Compile Include="Assets\Scripts\Teleport_at_Teleport.cs" />
@@ -628,6 +629,15 @@
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>C:/Users/9evil/Documents/Almaz/GitHub/game_studio_pisyka_try/First project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.ProBuilder">
+ <HintPath>C:/Users/9evil/Documents/Almaz/GitHub/game_studio_pisyka_try/First project/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.Editor">
+ <HintPath>C:/Users/9evil/Documents/Almaz/GitHub/game_studio_pisyka_try/First project/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+ <HintPath>C:/Users/9evil/Documents/Almaz/GitHub/game_studio_pisyka_try/First project/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/9evil/Documents/Almaz/GitHub/game_studio_pisyka_try/First project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -643,23 +653,14 @@
  <Reference Include="Unity.Rider.Editor">
  <HintPath>C:/Users/9evil/Documents/Almaz/GitHub/game_studio_pisyka_try/First project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.ProBuilder.AddOns.Editor">
+ <HintPath>C:/Users/9evil/Documents/Almaz/GitHub/game_studio_pisyka_try/First project/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/9evil/Documents/Almaz/GitHub/game_studio_pisyka_try/First project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/9evil/Documents/Almaz/GitHub/game_studio_pisyka_try/First project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder">
- <HintPath>C:/Users/9evil/Documents/Almaz/GitHub/game_studio_pisyka_try/First project/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.Editor">
- <HintPath>C:/Users/9evil/Documents/Almaz/GitHub/game_studio_pisyka_try/First project/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
- <HintPath>C:/Users/9evil/Documents/Almaz/GitHub/game_studio_pisyka_try/First project/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.AddOns.Editor">
- <HintPath>C:/Users/9evil/Documents/Almaz/GitHub/game_studio_pisyka_try/First project/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
