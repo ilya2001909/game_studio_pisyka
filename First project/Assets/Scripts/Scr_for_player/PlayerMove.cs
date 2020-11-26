@@ -25,7 +25,12 @@ public class PlayerMove : MonoBehaviour
             transform.position = new Vector3(10, 20, 10);
         }
 
-
+        if (transform.position.y < -10)
+        {
+            GetComponent<CharacterController>().enabled = false;
+            transform.position = new Vector3(35, 04f, 17.5f);
+            GetComponent<CharacterController>().enabled = true;
+        }
         float x = joystick.Horizontal;
         float z = joystick.Vertical;
         x += Input.GetAxis("Horizontal");

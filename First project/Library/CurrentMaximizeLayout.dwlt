@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 780, y: 492}
   m_MaxSize: {x: 16005, y: 14042}
   vertical: 0
-  controlID: 2512
+  controlID: 29
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 504, y: 492}
   m_MaxSize: {x: 12004, y: 14042}
   vertical: 1
-  controlID: 2513
+  controlID: 30
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 504, y: 221}
   m_MaxSize: {x: 12004, y: 4021}
   vertical: 0
-  controlID: 2514
+  controlID: 31
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,8 +187,8 @@ MonoBehaviour:
     y: 0
     width: 267
     height: 673
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -227,7 +227,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 76a4fdff1cfbffff
+      m_ExpandedIDs: 62edffffea5100002052000036520000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -358,16 +358,16 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: 41923624cb5637e49bea5c8f0a4510e3
   m_Gizmos: 1
-  m_SceneIsLit: 1
+  m_SceneIsLit: 0
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 142.08492, y: 119.928474, z: 93.84722}
+    m_Target: {x: 31.161186, y: 1.5763245, z: 6.4367676}
     speed: 2
-    m_Value: {x: 142.08492, y: 119.928474, z: 93.84722}
+    m_Value: {x: 31.161186, y: 1.5763245, z: 6.4367676}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_SceneViewState:
     showFog: 1
     showMaterialUpdate: 0
-    showSkybox: 1
+    showSkybox: 0
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -413,17 +413,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.17749122, y: 0.3001848, z: -0.056954704, w: 0.9355048}
+    m_Target: {x: 0.5063911, y: -0.047808528, z: 0.028133493, w: 0.8605235}
     speed: 2
-    m_Value: {x: 0.17748883, y: 0.30018073, z: -0.056953937, w: 0.9354922}
+    m_Value: {x: 0.5063886, y: -0.047808293, z: 0.028133355, w: 0.8605193}
   m_Size:
-    m_Target: 102.67266
+    m_Target: 17.004736
     speed: 2
-    m_Value: 102.67266
+    m_Value: 17.004736
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -562,11 +562,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\9evil\Documents\Almaz\GitHub\game_studio_pisyka_try\First
     project
@@ -574,9 +574,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 26}
-    m_SelectedIDs: 10430000
-    m_LastClickedID: 17168
-    m_ExpandedIDs: 0000000010430000124300001443000016430000184300001a43000000ca9a3b
+    m_SelectedIDs: 66390000
+    m_LastClickedID: 14694
+    m_ExpandedIDs: 00000000b4380000b6380000b8380000ba380000bc380000be38000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -604,7 +604,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000010430000124300001443000016430000184300001a43000000ca9a3b
+    m_ExpandedIDs: 00000000b4380000b6380000b8380000ba380000bc380000be380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -629,9 +629,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: a466fbff
-    m_LastClickedInstanceID: -301404
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 36520000
+    m_LastClickedInstanceID: 21046
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000062480000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -748,5 +748,5 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: -301404
+  m_LastInspectedObjectInstanceID: 21046
   m_LastVerticalScrollValue: 0

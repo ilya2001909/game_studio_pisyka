@@ -7,7 +7,7 @@ public class HealtsSistem : MonoBehaviour
 {
     public int health;
 
-    public List<Image> helf_images = new List<Image>(6);
+    public List<Image> helf_images = new List<Image>(3);
 
     public Sprite fullLive;
     public Sprite emptyLive;
