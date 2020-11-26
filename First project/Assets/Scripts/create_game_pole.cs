@@ -5,7 +5,7 @@ using UnityEngine;
 public class create_game_pole : MonoBehaviour
 {
 
-    public int kol_room_x, kol_room_z;
+    public int kol_room_x, kol_room_y;
     public GameObject[,] panels; 
 
     public GameObject pole_zon;
@@ -14,16 +14,18 @@ public class create_game_pole : MonoBehaviour
     public float x_start_pos;
     public float y_start_pos;
     public float z_start_pos;
+
+    public GameObject optimizator;
    
     void Start()
     {
 
-        panels = new GameObject[kol_room_x, kol_room_z];
+        panels = new GameObject[kol_room_x, kol_room_y];
         float x = x_start_pos;
         float y = y_start_pos;
         float z = z_start_pos;
 
-        for (int i1 = 0; i1 < kol_room_z; i1++)
+        for (int i1 = 0; i1 < kol_room_y; i1++)
         {
             for (int i2 = 0; i2 < kol_room_x; i2++)
             {
@@ -34,6 +36,33 @@ public class create_game_pole : MonoBehaviour
                 panels[i1, i2] = Instantiate(pole_zon, pos, qua);
 
                 panels[i1, i2].name = pole_zon.name + " - (" + (i2).ToString() + ";" + (i1).ToString() + ")";
+
+                ////////////////////////////////////////////////////////////////////////////////////////////////
+                /// Отключение порталов если панель крайняя
+                ////////////////////////////////////////////////////////////////////////////////////////////////
+                
+                if (i1 == 0)
+                {
+                    panels[i1, i2].GetComponent<Teleports>().teleport_Botton.SetActive(false);
+                }
+                if (i2 == 0)
+                {
+                    panels[i1, i2].GetComponent<Teleports>().teleport_Left.SetActive(false);
+                }
+                if (i1 == kol_room_x-1)
+                {
+                    panels[i1, i2].GetComponent<Teleports>().teleport_Top.SetActive(false);
+                }
+                if (i2 == kol_room_y-1)
+                {
+                    panels[i1, i2].GetComponent<Teleports>().teleport_Right.SetActive(false);
+                }
+
+                ////////////////////////////////////////////////////////////////////////////////////////////////
+                ////////////////////////////////////////////////////////////////////////////////////////////////
+                ////////////////////////////////////////////////////////////////////////////////////////////////
+               
+                panels[i1, i2].SetActive(false); //Заранее выключаю все порталы
 
                 ParticleSystem[] ps = panels[i1, i2].GetComponentsInChildren<ParticleSystem>();
                 foreach (ParticleSystem p in ps)
@@ -48,6 +77,9 @@ public class create_game_pole : MonoBehaviour
             z = z + z_change;
         }
 
+
+        optimizator.SetActive(true);                        //  Включаю оптимизатор чтобы он заранее не получил все данные
+        optimizator.GetComponent<Optimizator>().Start();    //  Включаю старт (его скрипта)
     }
 
 

@@ -35,9 +35,13 @@ public class Teleport_at_Teleport : MonoBehaviour
 	private float y;
 	private float z;
 
+	public GameObject optimizator_game_object;
+	public Optimizator optimizator;
+
 	void Start() 
 	{
 		check_Active = gameObject.GetComponentInParent<Check_active>();
+		optimizator_game_object = GameObject.Find("Optimizator");
 		if (сторона == Orintation_Display.Botton)
 		{
 			x = transform.position.x;
@@ -72,10 +76,39 @@ public class Teleport_at_Teleport : MonoBehaviour
 
     private void Teleport(Transform obj)
 	{
+		optimizator = optimizator_game_object.GetComponent<Optimizator>();
+		int x_pos = optimizator.pos_x;
+		int y_pos = optimizator.pos_y;
+
+		if (сторона == Orintation_Display.Right)
+        {
+			optimizator.pos_y++;
+			optimizator.panels[optimizator.pos_x, optimizator.pos_y].SetActive(true);
+		}
+		if (сторона == Orintation_Display.Left)
+        {
+			optimizator.pos_y--;
+			optimizator.panels[optimizator.pos_x, optimizator.pos_y].SetActive(true);
+		}
+		if (сторона == Orintation_Display.Top)
+        {
+			optimizator.pos_x++;
+			optimizator.panels[optimizator.pos_x, optimizator.pos_y].SetActive(true);
+		}
+		if (сторона == Orintation_Display.Botton)
+        {
+			optimizator.pos_x--;
+			optimizator.panels[optimizator.pos_x, optimizator.pos_y].SetActive(true);
+		}
+
+		
+		optimizator.panels[x_pos, y_pos].SetActive(false);
+		optimizator.panels[optimizator.pos_x, optimizator.pos_y].SetActive(true);
 		player.GetComponent<CharacterController>().enabled = false;
 		obj.transform.position = new Vector3(x, y, z);
 		teleported = false;
 		player.GetComponent<CharacterController>().enabled = true;
+
 	}
 
 	void OnTriggerEnter(Collider col)

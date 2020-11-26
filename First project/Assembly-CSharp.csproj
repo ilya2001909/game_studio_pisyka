@@ -65,6 +65,7 @@
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
      <Compile Include="Assets\Main_menu\Main_Menu_script.cs" />
+     <Compile Include="Assets\Optimizator.cs" />
      <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\CameraTarget.cs" />
      <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\EffectController.cs" />
      <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Script\EffectDemo.cs" />
@@ -78,6 +79,7 @@
      <Compile Include="Assets\Scripts\Scr_for_player\PlayerMove.cs" />
      <Compile Include="Assets\Scripts\Teleport_at_Teleport.cs" />
      <Compile Include="Assets\Scripts\create_game_pole.cs" />
+     <Compile Include="Assets\Teleports.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

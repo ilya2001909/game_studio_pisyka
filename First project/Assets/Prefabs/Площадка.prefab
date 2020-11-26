@@ -971,6 +971,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   check_Active: {fileID: 0}
   "\u0441\u0442\u043E\u0440\u043E\u043D\u0430": 0
+  optimizator_game_object: {fileID: 0}
+  optimizator: {fileID: 0}
 --- !u!65 &5319421545343292900
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1080,6 +1082,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   check_Active: {fileID: 0}
   "\u0441\u0442\u043E\u0440\u043E\u043D\u0430": 2
+  optimizator_game_object: {fileID: 0}
+  optimizator: {fileID: 0}
 --- !u!65 &1166474747664530380
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1973,6 +1977,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   check_Active: {fileID: 0}
   "\u0441\u0442\u043E\u0440\u043E\u043D\u0430": 1
+  optimizator_game_object: {fileID: 0}
+  optimizator: {fileID: 0}
 --- !u!65 &8031772219442640698
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2082,6 +2088,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   check_Active: {fileID: 0}
   "\u0441\u0442\u043E\u0440\u043E\u043D\u0430": 3
+  optimizator_game_object: {fileID: 0}
+  optimizator: {fileID: 0}
 --- !u!65 &6165341257161023163
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2199,6 +2207,7 @@ GameObject:
   - component: {fileID: 8626749015613237727}
   - component: {fileID: 2354714280527746289}
   - component: {fileID: 4541816373536551451}
+  - component: {fileID: 8974309596714092992}
   m_Layer: 0
   m_Name: "\u041F\u043B\u043E\u0449\u0430\u0434\u043A\u0430"
   m_TagString: Untagged
@@ -2275,6 +2284,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 70, y: 6, z: 34.5}
   m_Center: {x: 35, y: 2.5, z: 17.25}
+--- !u!114 &8974309596714092992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626749015613237724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632eb8ff3bd0c7e4c997ec5ec80aedd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleport_Top: {fileID: 8626749013822594981}
+  teleport_Botton: {fileID: 8626749015213252030}
+  teleport_Left: {fileID: 8626749015142274879}
+  teleport_Right: {fileID: 8626749013711941203}
 --- !u!1 &8626749015647395932
 GameObject:
   m_ObjectHideFlags: 0
