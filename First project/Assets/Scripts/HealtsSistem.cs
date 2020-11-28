@@ -7,26 +7,17 @@ public class HealtsSistem : MonoBehaviour
 {
     public int health;
 
-    public List<Image> helf_images = new List<Image>(3);
-
     public Sprite fullLive;
     public Sprite emptyLive;
+    public List<Sprite> helf_images = new List<Sprite>(3);
+
 
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < helf_images.Count; i++)
-        {
-            if (i<health)
-            {
-                helf_images[i].sprite = fullLive;
-            }
-            else
-            {
-                helf_images[i].sprite = emptyLive;
-            }
-        }
-
+        helf_images[0] = fullLive;
+        helf_images[1] = fullLive;
+        helf_images[2] = fullLive;
     }
 
     // Update is called once per frame

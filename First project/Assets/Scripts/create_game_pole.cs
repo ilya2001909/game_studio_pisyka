@@ -11,9 +11,11 @@ public class create_game_pole : MonoBehaviour
     public GameObject pole_zon;
     public float x_change = 70;
     public float z_change = 34.5f;
-    public float x_start_pos;
-    public float y_start_pos;
-    public float z_start_pos;
+    private float x_start_pos;
+    private float y_start_pos;
+    private float z_start_pos;
+
+    public Pose start_create_position;
 
     public GameObject optimizator;
    
@@ -21,6 +23,9 @@ public class create_game_pole : MonoBehaviour
     {
 
         panels = new GameObject[kol_room_x, kol_room_y];
+        x_start_pos = start_create_position.position.x;
+        y_start_pos = start_create_position.position.y;
+        z_start_pos = start_create_position.position.z;
         float x = x_start_pos;
         float y = y_start_pos;
         float z = z_start_pos;
