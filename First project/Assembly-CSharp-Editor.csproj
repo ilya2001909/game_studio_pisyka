@@ -55,23 +55,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Joystick Pack\Scripts\Editor\DynamicJoystickEditor.cs" />
-     <Compile Include="Assets\Joystick Pack\Scripts\Editor\FloatingJoystickEditor.cs" />
-     <Compile Include="Assets\Joystick Pack\Scripts\Editor\JoystickEditor.cs" />
-     <Compile Include="Assets\Joystick Pack\Scripts\Editor\VariableJoystickEditor.cs" />
-     <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Editor\EffectControllerInspector.cs" />
-     <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Editor\EffectToolBar.cs" />
-     <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Editor\RenderEffectInspector.cs" />
-     <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Editor\ShaderCustomEditor\ShaderMaterialsEditor.cs" />
-     <Compile Include="Assets\Particlecollection_Free samples\Plugins\Effect\Editor\XUIUtils.cs" />
-     <Compile Include="Assets\Игроки_мульт\Scripts\SetCharacter\Editor\SetCharacterEditor.cs" />
-     <Compile Include="Assets\Платные эффекты\Assets\Mirza Beig\Editor Extensions\Utilities\Multi-Asset Renamer\Editor\MultiAssetRenamer.cs" />
-     <Compile Include="Assets\Платные эффекты\Assets\Mirza Beig\Editor Extensions\Utilities\Particle Playback\Editor\ParticlePlayback.cs" />
-     <Compile Include="Assets\Платные эффекты\Assets\Mirza Beig\Editor Extensions\Utilities\Particle Playback\Editor\ParticlePlaybackEditorWindow.cs" />
-     <Compile Include="Assets\Платные эффекты\Assets\Mirza Beig\Editor Extensions\Utilities\Particle Playback\Editor\ParticlePlaybackExtensions.cs" />
-     <Compile Include="Assets\Платные эффекты\Assets\Mirza Beig\Editor Extensions\Utilities\Particle Scaler\Editor\ParticleScalerEditorWindow.cs" />
-     <Compile Include="Assets\Платные эффекты\Assets\Mirza Beig\Editor Extensions\Utilities\Particle Scaler\Editor\ParticleScalerExtensions.cs" />
-     <Compile Include="Assets\Платные эффекты\Assets\Mirza Beig\Editor Extensions\_Common\Editor\ParticleEditorUtility.cs" />
+     <Compile Include="Assets\Scene_game\Prefabs\Canvas\Joystick Pack\Scripts\Editor\DynamicJoystickEditor.cs" />
+     <Compile Include="Assets\Scene_game\Prefabs\Canvas\Joystick Pack\Scripts\Editor\FloatingJoystickEditor.cs" />
+     <Compile Include="Assets\Scene_game\Prefabs\Canvas\Joystick Pack\Scripts\Editor\JoystickEditor.cs" />
+     <Compile Include="Assets\Scene_game\Prefabs\Canvas\Joystick Pack\Scripts\Editor\VariableJoystickEditor.cs" />
+     <Compile Include="Assets\Scene_game\Prefabs\Player\Scripts\SetCharacter\Editor\SetCharacterEditor.cs" />
+     <Compile Include="Assets\Scene_game\Prefabs\Rooms\Эффекты\Plugins\Effect\Editor\EffectControllerInspector.cs" />
+     <Compile Include="Assets\Scene_game\Prefabs\Rooms\Эффекты\Plugins\Effect\Editor\EffectToolBar.cs" />
+     <Compile Include="Assets\Scene_game\Prefabs\Rooms\Эффекты\Plugins\Effect\Editor\RenderEffectInspector.cs" />
+     <Compile Include="Assets\Scene_game\Prefabs\Rooms\Эффекты\Plugins\Effect\Editor\ShaderCustomEditor\ShaderMaterialsEditor.cs" />
+     <Compile Include="Assets\Scene_game\Prefabs\Rooms\Эффекты\Plugins\Effect\Editor\XUIUtils.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
