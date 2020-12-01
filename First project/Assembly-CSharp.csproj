@@ -72,7 +72,6 @@
      <Compile Include="Assets\Scene_game\Prefabs\Rooms\Эффекты\Plugins\Effect\Script\RenderEffect.cs" />
      <Compile Include="Assets\Scene_game\Prefabs\Rooms\Эффекты\Plugins\Effect\Script\TransformExtension.cs" />
      <Compile Include="Assets\Scene_game\Scripts\Attack_sword_for_player.cs" />
-     <Compile Include="Assets\Scene_game\Scripts\Check_active.cs" />
      <Compile Include="Assets\Scene_game\Scripts\DamageTaken.cs" />
      <Compile Include="Assets\Scene_game\Scripts\Damage_head.cs" />
      <Compile Include="Assets\Scene_game\Scripts\Damage_lapa.cs" />
@@ -80,14 +79,16 @@
      <Compile Include="Assets\Scene_game\Scripts\GameController.cs" />
      <Compile Include="Assets\Scene_game\Scripts\HP_bar_script.cs" />
      <Compile Include="Assets\Scene_game\Scripts\HealtsSistem.cs" />
+     <Compile Include="Assets\Scene_game\Scripts\New_type_dannih.cs" />
      <Compile Include="Assets\Scene_game\Scripts\Optimizator.cs" />
+     <Compile Include="Assets\Scene_game\Scripts\Place_on_map.cs" />
+     <Compile Include="Assets\Scene_game\Scripts\Rows_panel.cs" />
      <Compile Include="Assets\Scene_game\Scripts\Scr_for_player\Attack_player.cs" />
      <Compile Include="Assets\Scene_game\Scripts\Scr_for_player\PlayerMove.cs" />
      <Compile Include="Assets\Scene_game\Scripts\Take_damage_from_enemy.cs" />
      <Compile Include="Assets\Scene_game\Scripts\Teleport_at_Teleport.cs" />
      <Compile Include="Assets\Scene_game\Scripts\Teleports.cs" />
      <Compile Include="Assets\Scene_game\Scripts\animation_tyr.cs" />
-     <Compile Include="Assets\Scene_game\Scripts\create_game_pole.cs" />
      <Compile Include="Assets\Scene_game\Scripts\life_enemy.cs" />
      <Compile Include="Assets\Scene_game\Ресурсы\Text_анимационный\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\Scene_game\Ресурсы\Text_анимационный\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
@@ -739,6 +740,10 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="EnhancedHierarchyEditor.csproj">
+      <Project>{526C4EA0-3AEA-CB29-EDF0-4AE35BFB07FE}</Project>
+      <Name>EnhancedHierarchyEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
