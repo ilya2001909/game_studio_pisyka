@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Attack_sword_for_player : MonoBehaviour
 {
-    public Attack_player attack_Player;
+    public Player_controller player_controller;
     void OnTriggerEnter(Collider col)
     {
         if (col.tag == "Enemy")
         {
-            attack_Player.enemy = col.gameObject;
+            player_controller.enemy_target = col.gameObject;
         }
     }
 

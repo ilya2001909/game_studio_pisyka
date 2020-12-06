@@ -5,46 +5,52 @@ using UnityEngine.AI;
 
 public class Alien_walk : MonoBehaviour
 {
-    public GameObject player;
-    public Animator enemy_anim;
-    public float dist;
-    NavMeshAgent nav;
-    CharacterController controller;
+    public GameObject target;
     public float Radius = 13;
+    public float dist;
+    public bool attack_can;
     public int spped;
+    private Animator myAnimator;
+    private NavMeshAgent nav;
+    private CharacterController controller;
 
 
     void Start()
     {
+        myAnimator = GetComponent<Animator>();
         nav = GetComponent<NavMeshAgent>();
         controller = GetComponent<CharacterController>();
-        nav.speed = spped;
     }
 
 
     void Update()
     {
-        dist = Vector3.Distance(player.transform.position, transform.position);
+        dist = Vector3.Distance(target.transform.position, transform.position);
         if (dist > Radius)
         {
             nav.enabled = false;
-            //gameObject.GetComponent<Animator>().SetTrigger("Idle");
+            attack_can = false;
+            myAnimator.Play("Ide");
         }
         if (dist < Radius)
         {
-            nav.enabled = true;
-            nav.SetDestination(player.transform.position);
             if (dist <= nav.stoppingDistance)
             {
+                nav.speed = 0;
+                nav.enabled = true;
+                nav.SetDestination(target.transform.position);
                 nav.enabled = false;
-                enemy_anim.SetBool("can_attack", true);
+                attack_can = true;
+                myAnimator.Play("Attack");
             }
             else
             {
+                nav.speed = spped;
                 nav.enabled = true;
-                enemy_anim.SetBool("can_attack", false);
+                nav.SetDestination(target.transform.position);
+                attack_can = false;
+                myAnimator.Play("Run");
             }
-            //gameObject.GetComponent<Animator>().SetTrigger("Run");
         }
     }
 }

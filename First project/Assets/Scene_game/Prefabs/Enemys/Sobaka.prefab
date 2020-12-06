@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 432544973}
   - component: {fileID: 432544972}
   - component: {fileID: 432544971}
-  - component: {fileID: 7075505634129407755}
   m_Layer: 0
   m_Name: Box_collider_head
   m_TagString: Untagged
@@ -94,20 +93,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7075505634129407755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 432544969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b093d084727a25e419abe315ae96622d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  take_Damage_From_Enemy: {fileID: 7203002116807439247}
-  animation: {fileID: 7254172019884048222}
 --- !u!1 &1153866771149719305
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,25 +151,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   take_Damage_From_Enemy: {fileID: 7203002116807439247}
-  animation: {fileID: 7254172019884048222}
---- !u!143 &1906481371
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7254172019876777116}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 6.83
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 16.8, z: 0}
 --- !u!195 &1906481369
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -219,10 +185,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8919c63eba580f949ba1c55d621fd8f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  enemy_anim: {fileID: 7254172019884048222}
-  dist: 0
+  target: {fileID: 0}
   Radius: 26
+  dist: 0
+  attack_can: 0
   spped: 8
 --- !u!114 &7203002116807439247
 MonoBehaviour:
@@ -253,6 +219,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active_from_attack: 0
   hp_enemy: 100
+--- !u!143 &7294863113454088436
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7254172019876777116}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 19.7
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 22, z: 0}
+--- !u!136 &4318909689704741328
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7254172019876777116}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 17.497347
+  m_Height: 39.3866
+  m_Direction: 1
+  m_Center: {x: -0.0000000030650087, y: 26.699999, z: -3.4490285}
 --- !u!1001 &7254172019876743742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1566,15 +1564,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 1495bacdec54a2f439c904aa72cbc8d6, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.2
+      value: 0.055
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 1495bacdec54a2f439c904aa72cbc8d6, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.2
+      value: 0.055
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 1495bacdec54a2f439c904aa72cbc8d6, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.2
+      value: 0.055
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 1495bacdec54a2f439c904aa72cbc8d6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1669,12 +1667,6 @@ PrefabInstance:
 --- !u!1 &7254172019876777116 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 1495bacdec54a2f439c904aa72cbc8d6,
-    type: 3}
-  m_PrefabInstance: {fileID: 7254172019876743742}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &7254172019884048222 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 9500000, guid: 1495bacdec54a2f439c904aa72cbc8d6,
     type: 3}
   m_PrefabInstance: {fileID: 7254172019876743742}
   m_PrefabAsset: {fileID: 0}

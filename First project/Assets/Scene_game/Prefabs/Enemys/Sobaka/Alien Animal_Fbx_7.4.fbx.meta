@@ -998,7 +998,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material
-    second: {fileID: 2100000, guid: 74473a98f5909854a8e2620d49c6cca7, type: 2}
+    second: {fileID: 2100000, guid: 97e5be11209047f43b177757d36e609e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -1018,7 +1018,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.005
-    second: {fileID: 2100000, guid: 74cd5f73d04b2904e89bcb33115acaad, type: 2}
+    second: {fileID: 2100000, guid: be6b3e860f975c046a0167eac6e39688, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -2423,14 +2423,14 @@ ModelImporter:
       takeName: Armature|Die_2
       internalID: 0
       firstFrame: 0
-      lastFrame: 200
+      lastFrame: 100
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

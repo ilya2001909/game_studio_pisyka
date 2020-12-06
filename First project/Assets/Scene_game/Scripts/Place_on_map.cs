@@ -6,7 +6,6 @@ public class Place_on_map : MonoBehaviour
 {
     private List<GameObject> rows;
     public Optimizator optimizator;
-    public GameObject player;
     public GameObject panel;
     public int x_pos, y_pos;
     public GameObject[,] panels = new GameObject[10, 10];
@@ -27,12 +26,6 @@ public class Place_on_map : MonoBehaviour
         panel = panels[x_pos, y_pos];
         panel_old = panel;
 
-        player.GetComponent<CharacterController>().enabled = false;
-        x = panel.transform.position.x + 35;
-        y = panel.transform.position.y - 2.1f;
-        z = panel.transform.position.z + 17.5f;
-        player.transform.position = new Vector3(x, y, z);
-        player.GetComponent<CharacterController>().enabled = true;
 
         x = panel.transform.position.x + 35;
         y = panel.transform.position.y + 26;
