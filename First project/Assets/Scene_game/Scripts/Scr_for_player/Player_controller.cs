@@ -66,7 +66,7 @@ public class Player_controller : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             controller.Move(direction * speed * Time.deltaTime);
-            myAnimator.Play("Male Sword Sprint");
+            myAnimator.Play("Male_Sword_Walk");
         }
 
         if (ide)
@@ -88,6 +88,17 @@ public class Player_controller : MonoBehaviour
             name_animation = name_animation + random.Next(1, 4).ToString();
             myAnimator.Play(name_animation);
             enemy_target.GetComponent<life_enemy>().hp_enemy -= damage;
+        }
+    }
+    public void _rivok()
+    {
+        if (time == 0)
+        {
+            time = 0;
+            walk = false;
+            ide = false;
+            attack = true;
+            myAnimator.Play("Male Sword Roll");
         }
     }
 }

@@ -28,8 +28,8 @@ public class Place_on_map : MonoBehaviour
 
 
         x = panel.transform.position.x + 35;
-        y = panel.transform.position.y + 26;
-        z = panel.transform.position.z - 0.3f;
+        y = panel.transform.position.y + 18.04f;
+        z = panel.transform.position.z + 6.5f;
         camera.transform.position = new Vector3(x,y,z);
         panel_old = panel;
     }
@@ -41,8 +41,8 @@ public class Place_on_map : MonoBehaviour
         if (panel != panel_old)
         {
             x = panel.transform.position.x + 35;
-            y = panel.transform.position.y + 26;
-            z = panel.transform.position.z - 0.3f;
+            y = panel.transform.position.y + 18.04f;
+            z = panel.transform.position.z + 6.5f;
             camera.transform.position = new Vector3(x, y, z);
 
             panel.SetActive(true);

@@ -28,7 +28,6 @@ public class life_enemy : MonoBehaviour
         GetComponent<CharacterController>().enabled = false;
         GetComponent<Alien_walk>().enabled = false;
         GetComponent<Take_damage_from_enemy>().enabled = false;
-        GetComponent<BoxCollider>().enabled = false;
         myAnimator.Play("Die");
         GetComponent<life_enemy>().enabled = false;
     }

@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Enemy_script.cs" />
      <Compile Include="Assets\Main_menu\Main_Menu_script.cs" />
      <Compile Include="Assets\Scene_game\Prefabs\Canvas\Joystick Pack\Examples\JoystickPlayerExample.cs" />
      <Compile Include="Assets\Scene_game\Prefabs\Canvas\Joystick Pack\Examples\JoystickSetterExample.cs" />
@@ -123,6 +124,7 @@
      <Compile Include="Assets\Scene_game\Ресурсы\Text_анимационный\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\Scene_game\Ресурсы\Text_анимационный\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\Scene_game\Ресурсы\Text_анимационный\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+     <Compile Include="Assets\Spawn_enemys.cs" />
      <Compile Include="Assets\Эксперементы\Creature_Monsters_X\Alien_Walk_Akula.cs" />
      <Compile Include="Assets\Эксперементы\EgyptMonsters\Alien_walk_pauk.cs" />
      <Compile Include="Assets\Эксперементы\EgyptMonsters\Scripts\DealDamageComponent.cs" />
